@@ -1,2 +1,2 @@
 # OpenTone
-Audio Player with EQ
+Audio player, file converter, and equalizer.
