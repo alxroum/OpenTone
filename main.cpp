@@ -22,10 +22,14 @@ int main(void)
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    const int screenWidth = 800;
-    const int screenHeight = 450;
+    const int screenWidth = 1920;
+    const int screenHeight = 1080;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - input keys");
+    Color OT_BACKGROUND = { 34, 40, 49 };
+    Color OT_BLUE = { 254, 173, 181 };
+    Color OT_ORANGE = { 255, 107, 107 };
+
+    InitWindow(screenWidth, screenHeight, "OpenTone");
 
     Vector2 ballPosition = { (float)screenWidth/2, (float)screenHeight/2 };
 
@@ -36,22 +40,17 @@ int main(void)
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
         // Update
-        //----------------------------------------------------------------------------------
-        if (IsKeyDown(KEY_RIGHT)) ballPosition.x += 2.0f;
-        if (IsKeyDown(KEY_LEFT)) ballPosition.x -= 2.0f;
-        if (IsKeyDown(KEY_UP)) ballPosition.y -= 2.0f;
-        if (IsKeyDown(KEY_DOWN)) ballPosition.y += 2.0f;
-        //----------------------------------------------------------------------------------
 
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
-            ClearBackground(RAYWHITE);
+            ClearBackground(OT_BACKGROUND);
+            
 
-            DrawText("move the ball with arrow keys", 10, 10, 20, DARKGRAY);
-
-            DrawCircleV(ballPosition, 50, MAROON);
+            DrawText("move the ball with arrow keys", 10, 10, 20, OT_BLUE);
+            
+            DrawRectangle(100, 50, 200, 100, OT_ORANGE);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
