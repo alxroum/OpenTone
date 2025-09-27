@@ -1,6 +1,6 @@
-^C:\USERS\GARYW\DOCUMENTS\COLLAGE NOTES\GIT PROJECTS\OPENTONE\BUILD\CMAKEFILES\1E0F2CFA26147B55629B348FBAD93A36\GENERATE.STAMP.RULE
+^C:\USERS\ALXRO\DESKTOP\FILES\CODE\C++\OPENTONE\BUILD\CMAKEFILES\79250240836A3BF07415A2CE970AF1E3\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone" "-BC:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/example.sln"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/alxro/Desktop/Files/code/C++/OpenTone -BC:/Users/alxro/Desktop/Files/code/C++/OpenTone/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/alxro/Desktop/Files/code/C++/OpenTone/build/example.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
