@@ -1306,3 +1306,522 @@ events:
       Microsoft (R) Incremental Linker Version 14.38.33145.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:9 (find_package)"
+    name: "raylib"
+    configs:
+      -
+        filename: "raylibConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "raylib-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "5.5"
+      version_complete: "5.5"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "raylib"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/pkgRedirects/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/pkgRedirects/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Utilities 1.6/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Utilities 1.6/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2023a/runtime/win64/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2023a/runtime/win64/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2023a/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2023a/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Programs/Python/Python312/Scripts/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Programs/Python/Python312/Scripts/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Programs/Python/Python312/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Programs/Python/Python312/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Programs/Python/Launcher/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Programs/Python/Launcher/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Microsoft/WindowsApps/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Microsoft/WindowsApps/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Programs/Microsoft VS Code/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/Programs/Microsoft VS Code/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/GitHubDesktop/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/garyw/AppData/Local/GitHubDesktop/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/raylibConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/raylib-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\MATLAB\\R2023a\\runtime\\win64"
+        - "C:\\Program Files\\MATLAB\\R2023a\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\garyw\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\garyw\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\garyw\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\garyw\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\garyw\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\garyw\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\garyw\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/OpenTone"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/OpenTone"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "build/_deps/raylib-src/cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
+      - "build/_deps/raylib-src/cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
+      - "build/_deps/raylib-src/CMakeLists.txt:34 (include)"
+    checks:
+      - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
+    directories:
+      source: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-gl525l"
+      binary: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-gl525l"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_THOSE_TOGGLES"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-gl525l'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f4605.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.19+164abd434 for .NET Framework
+        Build started 9/26/2025 9:01:39 PM.
+        
+        Project "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gl525l\\cmTC_f4605.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f4605.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gl525l\\Debug\\".
+          Creating directory "cmTC_f4605.dir\\Debug\\cmTC_f4605.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f4605.dir\\Debug\\cmTC_f4605.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f4605.dir\\Debug\\cmTC_f4605.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_THOSE_TOGGLES /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_f4605.dir\\Debug\\\\" /Fd"cmTC_f4605.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  -Werror=pointer-arith "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gl525l\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_THOSE_TOGGLES /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_f4605.dir\\Debug\\\\" /Fd"cmTC_f4605.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue  -Werror=pointer-arith "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gl525l\\src.c"
+        cl : command line  error D8021: invalid numeric argument '/Werror=pointer-arith' [C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gl525l\\cmTC_f4605.vcxproj]
+        Done Building Project "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gl525l\\cmTC_f4605.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gl525l\\cmTC_f4605.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          cl : command line  error D8021: invalid numeric argument '/Werror=pointer-arith' [C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gl525l\\cmTC_f4605.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.53
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-yhb1vr"
+      binary: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-yhb1vr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake;C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-yhb1vr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_766e8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.19+164abd434 for .NET Framework
+        Build started 9/26/2025 9:01:40 PM.
+        
+        Project "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\cmTC_766e8.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_766e8.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\Debug\\".
+          Creating directory "cmTC_766e8.dir\\Debug\\cmTC_766e8.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_766e8.dir\\Debug\\cmTC_766e8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_766e8.dir\\Debug\\cmTC_766e8.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_766e8.dir\\Debug\\\\" /Fd"cmTC_766e8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_766e8.dir\\Debug\\\\" /Fd"cmTC_766e8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\src.c"
+          src.c
+        C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\cmTC_766e8.vcxproj]
+        Done Building Project "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\cmTC_766e8.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\cmTC_766e8.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yhb1vr\\cmTC_766e8.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.62
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-66ia4r"
+      binary: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-66ia4r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake;C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-66ia4r'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1576b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.19+164abd434 for .NET Framework
+        Build started 9/26/2025 9:01:41 PM.
+        
+        Project "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\cmTC_1576b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1576b.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\Debug\\".
+          Creating directory "cmTC_1576b.dir\\Debug\\cmTC_1576b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1576b.dir\\Debug\\cmTC_1576b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1576b.dir\\Debug\\cmTC_1576b.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1576b.dir\\Debug\\\\" /Fd"cmTC_1576b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_1576b.dir\\Debug\\\\" /Fd"cmTC_1576b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\Debug\\cmTC_1576b.exe" /INCREMENTAL /ILK:"cmTC_1576b.dir\\Debug\\cmTC_1576b.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-66ia4r/Debug/cmTC_1576b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-66ia4r/Debug/cmTC_1576b.lib" /MACHINE:X64  /machine:x64 cmTC_1576b.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\cmTC_1576b.vcxproj]
+        Done Building Project "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\cmTC_1576b.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\cmTC_1576b.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66ia4r\\cmTC_1576b.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.76
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "build/_deps/raylib-src/src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-yvu6cy"
+      binary: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-yvu6cy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake;C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-yvu6cy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cbb4f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.19+164abd434 for .NET Framework
+        Build started 9/26/2025 9:01:42 PM.
+        
+        Project "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\cmTC_cbb4f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_cbb4f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\Debug\\".
+          Creating directory "cmTC_cbb4f.dir\\Debug\\cmTC_cbb4f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_cbb4f.dir\\Debug\\cmTC_cbb4f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_cbb4f.dir\\Debug\\cmTC_cbb4f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_cbb4f.dir\\Debug\\\\" /Fd"cmTC_cbb4f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_cbb4f.dir\\Debug\\\\" /Fd"cmTC_cbb4f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\Debug\\cmTC_cbb4f.exe" /INCREMENTAL /ILK:"cmTC_cbb4f.dir\\Debug\\cmTC_cbb4f.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-yvu6cy/Debug/cmTC_cbb4f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/CMakeFiles/CMakeScratch/TryCompile-yvu6cy/Debug/cmTC_cbb4f.lib" /MACHINE:X64  /machine:x64 cmTC_cbb4f.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\cmTC_cbb4f.vcxproj]
+        Done Building Project "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\cmTC_cbb4f.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\cmTC_cbb4f.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\garyw\\Documents\\Collage Notes\\Git Projects\\OpenTone\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yvu6cy\\cmTC_cbb4f.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.73
+        
+      exitCode: 1
+...

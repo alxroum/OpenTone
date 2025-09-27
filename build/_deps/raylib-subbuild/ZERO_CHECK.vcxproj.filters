@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\garyw\Documents\Collage Notes\Git Projects\OpenTone\build\_deps\raylib-subbuild\CMakeFiles\1f6a49034b4548dde3e3a9209c8e530f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4E6768F3-339D-32E9-A060-515297EE70C4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

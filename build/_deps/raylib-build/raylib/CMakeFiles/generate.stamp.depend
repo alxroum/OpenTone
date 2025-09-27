@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.1/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Templates/CPackConfig.cmake.in
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/CompileDefinitions.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/GlfwImport.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/InstallConfigurations.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/JoinPaths.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/LibraryConfigurations.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/PackConfigurations.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/cmake/raylib-config-version.cmake
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/raylib.pc.in
+C:/Users/garyw/Documents/Collage Notes/Git Projects/OpenTone/build/_deps/raylib-src/src/CMakeLists.txt
