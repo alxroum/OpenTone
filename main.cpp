@@ -14,6 +14,7 @@
 ********************************************************************************************/
 
 #include ".\build\_deps\raylib-build\raylib\include\raylib.h"
+#include "include/opentone.h"
 
 //------------------------------------------------------------------------------------
 // Program main entry point
@@ -22,16 +23,15 @@ int main(void)
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    const int screenWidth = 1920;
-    const int screenHeight = 1080;
-
-    Color OT_BACKGROUND = { 34, 40, 49 };
-    Color OT_BLUE = { 254, 173, 181 };
-    Color OT_ORANGE = { 255, 107, 107 };
+    const int screenWidth = 1920 / 2; // will likely be imported from a config file in the future
+    const int screenHeight = 1080 / 2;
 
     InitWindow(screenWidth, screenHeight, "OpenTone");
 
-    Vector2 ballPosition = { (float)screenWidth/2, (float)screenHeight/2 };
+    Vector2 mousePos = {0.0f, 0.0f};
+
+    // buttons
+    Rectangle 
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
@@ -41,14 +41,15 @@ int main(void)
     {
         // Update
 
+        mousePos = GetMousePosition();
+
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
             ClearBackground(OT_BACKGROUND);
-            
 
-            DrawText("move the ball with arrow keys", 10, 10, 20, OT_BLUE);
+            DrawText("move the ball with arrow keys", 10, 10, 20, OT_WHITE);
             
             DrawRectangle(100, 50, 200, 100, OT_ORANGE);
 
