@@ -16,6 +16,44 @@
 #include ".\build\_deps\raylib-build\raylib\include\raylib.h"
 #include "include/opentone.h"
 
+class OTButton : public Rectangle {
+    
+    private:
+
+        Vector2 screenPos;
+        float width = 100;
+        float height = 35;
+        Color color;
+        int btnState = 0;
+        Rectangle rect;
+
+    public:
+
+        OTButton(Vector2 screenPosition, float btnWidth, float btnHeight,  Color backgroundColor) {
+            screenPos = screenPosition;
+            width = btnWidth;
+            height = btnHeight;
+            color = backgroundColor;
+            rect = {screenPos.x, screenPos.y, width, height};
+        }
+
+        void DrawButton() {
+            DrawRectanglePro(rect, {width / 2, height / 2}, 0, color);
+        }
+
+        Rectangle Rect() {
+            return this->rect;
+        }
+
+        float Width() {
+            return this->width;
+        }
+
+        float Height() {
+            return this->height;
+        }
+};
+
 //------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
@@ -26,12 +64,19 @@ int main(void)
     const int screenWidth = 1920 / 2; // will likely be imported from a config file in the future
     const int screenHeight = 1080 / 2;
 
-    InitWindow(screenWidth, screenHeight, "OpenTone");
+    const Vector2 screenCenter = {screenWidth / 2, screenHeight / 2};
+
+    // VARIABLES
 
     Vector2 mousePos = {0.0f, 0.0f};
 
-    // buttons
-    Rectangle 
+    // BUTTONS
+
+    OTButton btn = OTButton(screenCenter, 150, 50, OT_BLUE);
+
+    // GAME SETUP
+
+    InitWindow(screenWidth, screenHeight, "OpenTone");
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
@@ -49,9 +94,9 @@ int main(void)
 
             ClearBackground(OT_BACKGROUND);
 
-            DrawText("move the ball with arrow keys", 10, 10, 20, OT_WHITE);
+            DrawText("Welcome to OpenTone!", 10, 10, 20, OT_WHITE);
             
-            DrawRectangle(100, 50, 200, 100, OT_ORANGE);
+            btn.DrawButton();
 
         EndDrawing();
         //----------------------------------------------------------------------------------
