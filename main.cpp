@@ -77,6 +77,8 @@ int main(void)
     // GAME SETUP
 
     InitWindow(screenWidth, screenHeight, "OpenTone");
+    
+    Font apb = LoadFontEx("/graphics/font/calibri.ttf", 32, 0, 250);
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
@@ -94,7 +96,7 @@ int main(void)
 
             ClearBackground(OT_BACKGROUND);
 
-            DrawText("Welcome to OpenTone!", 10, 10, 20, OT_WHITE);
+            DrawTextEx(apb, "Welcome to OpenTone!",{10, 10}, 20, 3, OT_WHITE);
             
             btn.DrawButton();
 
