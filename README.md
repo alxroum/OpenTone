@@ -11,3 +11,6 @@ dependencies for source code editing:
 - electron
 
 using electron for graphics
+electron and nodejs are gitignored, so make sure to install them in the project using 
+
+npm i electron --save-dev
