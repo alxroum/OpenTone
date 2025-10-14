@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    --ot-background: rgb(34, 40, 49);
+    --ot-blue: rgb(66, 135, 245);
+    --ot-orange: rgb(255, 107, 107);
+}
+
+body {
+    background-color: var(--ot-background);
+    color: rgb(245, 245, 245)
+}
