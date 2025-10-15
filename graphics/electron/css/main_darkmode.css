@@ -39,14 +39,16 @@ body {
     padding: 0.33em;
     font-size: large;
     border-radius: 4px;
-    border: 3px solid var(--dark-blue);
+    border: 3px solid var(--dark-blue) inset;
     background-color: var(--dark-blue);
-    color: var(--ot-white)
+    color: var(--ot-white);
+    box-shadow: 1.5px 1.5px var(--deep-gray);
 }
 
 .nav-button:hover {
     background-color: var(--deep-gray);
-    border: 3px solid #1E2430;
+    border: 3px solid #1E2430 inset;
+    box-shadow: 1.5px 1.5px var(--dark-blue) inset;
 }
 
 #nav-spacer {
