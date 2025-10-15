@@ -46,6 +46,12 @@ body {
 }
 
 .nav-button:hover {
+    background-color: rgba(48, 97, 141, 0.693);
+    border: 3px solid #1E2430 inset;
+    box-shadow: 1.5px 1.5px var(--deep-gray);
+}
+
+.nav-button:active {
     background-color: var(--deep-gray);
     border: 3px solid #1E2430 inset;
     box-shadow: 1.5px 1.5px var(--dark-blue) inset;
@@ -61,4 +67,8 @@ body {
 
 #content {
     padding: 2%;
+}
+
+#timeline {
+    background-color: blue;
 }
