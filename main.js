@@ -2,9 +2,13 @@ const { app, BrowserWindow } = require('electron/main')
 const path = require('node:path')
 
 function createWindow () {
+
+  const iconPath = path.join(__dirname, 'graphics/img/openToneIcon.png');
+
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: iconPath,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true

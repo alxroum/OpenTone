@@ -1,11 +1,9 @@
 {
     "users": [
         {
-            "id": "01",
+            "id": 0,
             "screen_resolution": "1920x1080",
             "theme": "dark"
         }
     ]
-        
-
 }

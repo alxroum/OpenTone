@@ -1,7 +1,7 @@
 {
   "name": "opentone",
   "version": "1.0.0",
-  "description": "",
+  "description": "Open source audio player, file converter, and equalizer.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/alxroum/OpenTone.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alex Rouman, Trevor Spalding",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alxroum/OpenTone/issues"
