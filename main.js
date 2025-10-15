@@ -24,8 +24,24 @@ app.whenReady().then(() => {
   })
 })
 
+// not working right now, but the goal is to prompt the user before closing
+app.on('close', async (event) => {
+  if (process.platform !== 'darwin') {
+    event.preventDefault();
+    const response = await dialog.showMessageBox(mainWindow, {
+      type: 'question',
+      buttons: ['Leave', 'Stay'],
+      title: 'Confirm',
+      message: 'Are you sure you want to quit? Unsaved data may be lost.',
+    });
+    if (response.response === 0) { // 'Leave' button is at index 0
+      app.destroy(); // Properly destroy the window
+    }
+  }
+});
+
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
-    app.quit()
+    app.quit();
   }
-})
+});
