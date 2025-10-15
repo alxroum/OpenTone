@@ -11,9 +11,6 @@ import soundfile as sf
 # for later
 # - alac
 
-
-
-
 class File:
 
     def __init__(self, path: str):

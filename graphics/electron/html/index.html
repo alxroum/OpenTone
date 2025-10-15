@@ -40,7 +40,41 @@
 
         <div id="loaded-file">
             <h2 id="fname">filename</h2>
+
         </div>
+
+        <table id="convert-box">
+            <tr class="cb-row">
+                <td>
+                    <h2 id="convert-header">Convert File</h2>
+                    <hr id="table-break">
+                </td>
+            </tr>
+            <tr class="cb-row">
+                <td>
+                    <div id="convert-body">
+                        <form>
+                            From <i><span id="current-file">example.mp3</span></i>
+                            <br>
+                            <label for="">To: </label>
+                            <select title="File Type" id="file-type-radio" name="file type">
+                                <option value=".wav">wav</option>
+                                <option value=".mp3">mp3</option>
+                                <option value=".flac">flac</option>
+                            </select>
+                            <br>
+                            <button>
+                                Convert
+                            </button>
+                            <br>
+                            <button>
+                                <a id="file-download" download="converted_file" href="../../../files/generated/testFile.mp3">Download</a>
+                            </button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
 </body>

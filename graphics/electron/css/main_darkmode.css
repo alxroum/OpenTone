@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     --ot-dark: rgb(34, 40, 49);
-    --ot-gray: rgb(40, 51, 62);
+    --ot-gray: #28303f;
     --ot-blue: rgb(66, 135, 245);
     --nav-color: rgb(33, 66, 95);
     --ot-orange: rgb(255, 107, 107);
@@ -69,10 +69,49 @@ body {
 
 /* main page content starts */
 
-#content {
-    padding: 2%;
-}
-
 #fname {
     background-color: blue;
+}
+
+#file-import {
+    margin: 20px;
+}
+
+/* Convert Box */
+
+#convert-box {
+    margin: 20px;
+    border-collapse: collapse;
+    box-shadow: 3px 3px #1b202a;
+    border-radius: 5px;
+}
+
+#convert-box tr td {
+    border: 3px solid #232a38;
+    border-radius: 5px;
+}
+
+#convert-header {
+    background-color: #333e52;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#table-break {
+    border: 2px solid #2c3546;
+}
+
+#convert-body {
+    background-color: var(--ot-gray);
+    padding: 10px;
+}
+
+#convert-body button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#file-download {
+    text-decoration: none;
+    color: black;
 }
