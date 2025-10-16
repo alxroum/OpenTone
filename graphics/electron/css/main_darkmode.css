@@ -69,41 +69,47 @@ body {
 
 /* main page content starts */
 
-#fname {
-    background-color: blue;
-}
-
-#file-import {
+#active-file {
+    background-color: #333e52;
+    border: 3px solid #232a38;
     margin: 20px;
 }
 
-/* Convert Box */
+#active-file h2 {
+    padding: 10px;
+}
 
-#convert-box {
+#audio-clip {
+    margin-top: 5px;
+}
+
+/* box styling */
+
+.-box {
     margin: 20px;
     border-collapse: collapse;
     box-shadow: 3px 3px #1b202a;
     border-radius: 5px;
 }
 
-#convert-box tr td {
+.-box td {
     border: 3px solid #232a38;
     border-radius: 5px;
 }
 
-#convert-header {
+.-header {
     background-color: #333e52;
     border-collapse: collapse;
     padding: 10px;
 }
 
-#table-break {
-    border: 2px solid #2c3546;
-}
-
-#convert-body {
+.-body {
     background-color: var(--ot-gray);
     padding: 10px;
+}
+
+.table-break {
+    border: 2px solid #2c3546;
 }
 
 #convert-body button {

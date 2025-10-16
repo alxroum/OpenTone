@@ -27,54 +27,69 @@
 
     <div id="content">
         
-        <div id="file-import">
-            <label for="audio-clip">Choose an audio clip:</label>
-            <br>
-            <br>
-            <input type="file" id="audio-clip"
-            name="audio-clip" accept="audio/*" 
-            title="Audio Clip" >
-            <br>
-            <br>
+        <div id="active-file">
+            <h2 id="-header">Active File</h2>
+            <hr class="table-break">
         </div>
 
-        <div id="loaded-file">
-            <h2 id="fname">filename</h2>
+        <table id="file-table">
+            <tr>
+                <td class="left">
+                    <table id="file-upload" class="-box">
+                        <tr>
+                            <td>
+                                <h2 class="-header">Upload File</h2>
+                                <hr class="table-break">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="-body">
+                                    <input type="file" id="audio-clip"
+                                    name="audio-clip" accept="audio/*" 
+                                    title="Audio Clip">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
 
-        </div>
-
-        <table id="convert-box">
-            <tr class="cb-row">
-                <td>
-                    <h2 id="convert-header">Convert File</h2>
-                    <hr id="table-break">
+                <td class="right">
+                    <table id="file-convert" class="-box">
+                        <tr>
+                            <td>
+                                <h2 class="-header">Convert File</h2>
+                                <hr class="table-break">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="-body">
+                                    <form>
+                                        From <i><span id="current-file">example.mp3</span></i>
+                                        <br>
+                                        <label for="">To: </label>
+                                        <select title="File Type" id="file-type-radio" name="file type">
+                                            <option value=".wav">wav</option>
+                                            <option value=".mp3">mp3</option>
+                                            <option value=".flac">flac</option>
+                                        </select>
+                                        <br>
+                                        <button>
+                                            Convert
+                                        </button>
+                                        <br>
+                                        <button>
+                                            <a id="file-download" download="converted_file" href="../../../files/generated/testFile.mp3">Download</a>
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
-            <tr class="cb-row">
-                <td>
-                    <div id="convert-body">
-                        <form>
-                            From <i><span id="current-file">example.mp3</span></i>
-                            <br>
-                            <label for="">To: </label>
-                            <select title="File Type" id="file-type-radio" name="file type">
-                                <option value=".wav">wav</option>
-                                <option value=".mp3">mp3</option>
-                                <option value=".flac">flac</option>
-                            </select>
-                            <br>
-                            <button>
-                                Convert
-                            </button>
-                            <br>
-                            <button>
-                                <a id="file-download" download="converted_file" href="../../../files/generated/testFile.mp3">Download</a>
-                            </button>
-                        </form>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        </table> 
     </div>
 
 </body>
