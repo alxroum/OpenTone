@@ -27,14 +27,9 @@ function isValidFile(infile) {
 }
 
 function unHandleFile() {
-    document.getElementById("file-import").style="display:block"
-    document.getElementById("loaded-file").style="display:none"
+    
 }
 
 function handleFile(file) {
     // do something with the file when it is determined to be valid
-    document.getElementById("file-upload").style="display:none"
-    var lf = document.getElementById("loaded-file");
-    lf.style="display:inline"
-    lf.innerHTML = file.name;
 }

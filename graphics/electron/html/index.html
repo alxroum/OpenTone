@@ -26,70 +26,47 @@
     <hr id="nav-spacer">
 
     <div id="content">
+
         
-        <div id="active-file">
-            <h2 id="-header">Active File</h2>
-            <hr class="table-break">
+        <div id="file-table-container">
+            <div id="file-grid">
+                
+                <div class="-box">
+                    <div class="-header">
+                        header goes here
+                    </div>
+                    <div class="table-break"></div>
+                    <div class="-content">
+                        content goes here
+                    </div>
+                </div>
+                <div class="-box">
+                    <div class="-header">
+                        header goes here
+                    </div>
+                    <div class="table-break"></div>
+                    <div class="-content">
+                        content goes here <br> this is a longer message
+                        <br> this is a longer message
+                        <br> this is a longer message
+                        
+                    </div>
+                </div>
+                <div class="-box">
+                    <div class="-header">
+                        header goes here
+                        
+                    </div>
+                    <div class="table-break"></div>
+                    <div class="-content">
+                        content goes here
+                    </div>
+                </div>
+                
+                    
+                
+            </table> 
         </div>
-
-        <table id="file-table">
-            <tr>
-                <td class="left">
-                    <table id="file-upload" class="-box">
-                        <tr>
-                            <td>
-                                <h2 class="-header">Upload File</h2>
-                                <hr class="table-break">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="-body">
-                                    <input type="file" id="audio-clip"
-                                    name="audio-clip" accept="audio/*" 
-                                    title="Audio Clip">
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-
-                <td class="right">
-                    <table id="file-convert" class="-box">
-                        <tr>
-                            <td>
-                                <h2 class="-header">Convert File</h2>
-                                <hr class="table-break">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="-body">
-                                    <form>
-                                        From <i><span id="current-file">example.mp3</span></i>
-                                        <br>
-                                        <label for="">To: </label>
-                                        <select title="File Type" id="file-type-radio" name="file type">
-                                            <option value=".wav">wav</option>
-                                            <option value=".mp3">mp3</option>
-                                            <option value=".flac">flac</option>
-                                        </select>
-                                        <br>
-                                        <button>
-                                            Convert
-                                        </button>
-                                        <br>
-                                        <button>
-                                            <a id="file-download" download="converted_file" href="../../../files/generated/testFile.mp3">Download</a>
-                                        </button>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table> 
     </div>
 
 </body>
