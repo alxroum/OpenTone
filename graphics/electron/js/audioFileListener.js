@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// check if the input file is one of the valid formats
 function isValidFile(infile) {
     const allowedTypes = ['.wav', '.flac', '.mp3'];
     const name = infile.name;
@@ -26,10 +27,12 @@ function isValidFile(infile) {
     return true;
 }
 
+// what the page should do when a file isn't there or was removed
 function unHandleFile() {
     
 }
 
+// what the page should do when a file has been selected
 function handleFile(file) {
     // do something with the file when it is determined to be valid
 }

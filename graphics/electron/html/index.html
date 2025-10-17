@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="script-src 'self' 'unsafe-inline'" content="width=device-width, initial-scale=1.0" http-equiv="Content-Security-Policy">
+    <meta name="viewport" http-equiv="Content-Security-Policy">
     <link rel="stylesheet" type="text/css" href="../css/main_darkmode.css">
     <link rel="icon" type="image/x-icon" href="../../img/openToneIcon.ico">
     <script src="../js/functions.js"></script>
@@ -26,48 +26,78 @@
     <hr id="nav-spacer">
 
     <div id="content">
-
-        
-        <div id="file-table-container">
+        <div id="file-grid-container">
             <div id="file-grid">
                 
                 <div class="-box">
-                    <div class="-header">
-                        header goes here
-                    </div>
-                    <div class="table-break"></div>
-                    <div class="-content">
-                        content goes here
-                    </div>
-                </div>
-                <div class="-box">
-                    <div class="-header">
-                        header goes here
-                    </div>
-                    <div class="table-break"></div>
-                    <div class="-content">
-                        content goes here <br> this is a longer message
-                        <br> this is a longer message
-                        <br> this is a longer message
-                        
+                    <div class="-box-container">
+                        <div class="-header">
+                            <h2>Upload File</h2>
+                        </div>
+                        <div class="table-break"></div>
+                        <div class="-content">
+                            <input type="file" id="audio-clip"
+                                name="audio-clip" accept="audio/*" 
+                                title="Audio Clip">
+                        </div>
                     </div>
                 </div>
                 <div class="-box">
-                    <div class="-header">
-                        header goes here
-                        
-                    </div>
-                    <div class="table-break"></div>
-                    <div class="-content">
-                        content goes here
+                    <div class="-box-container">
+                        <div class="-header">
+                            <h2>Active File</h2>
+                        </div>
+                        <div class="table-break"></div>
+                        <div class="-content">
+                            current file name
+                        </div>
                     </div>
                 </div>
-                
-                    
-                
-            </table> 
+                <div class="-box">
+                    <div class="-box-container">
+                        <div class="-header">
+                            <h2>Convert File</h2>
+                        </div>
+                        <div class="table-break"></div>
+                        <div class="-content">
+                            <form>
+                                From <i><span id="current-file">example.mp3</span></i>
+                                <br>
+                                <label for="">To: </label>
+                                <select title="File Type" id="file-type-radio" name="file type">
+                                    <option value=".wav">wav</option>
+                                    <option value=".mp3">mp3</option>
+                                    <option value=".flac">flac</option>
+                                </select>
+                                <br>
+                                <button>
+                                    Convert
+                                </button>
+                                <br>
+                                <button>
+                                    <a id="file-download" download="converted_file" href="../../../files/generated/testFile.mp3"
+                                    style="color: black; text-decoration: none;">Download</a>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div> 
+        </div> <!-- file-grid-container ends -->
+
+        <div id="timeline" class="-box">
+            <div class="-header">
+                <h2>Timeline</h2>
+            </div>
+            <div class="table-break"></div>
+            <div class="-content">
+
+            </div>
         </div>
-    </div>
+    </div> <!-- content ends -->
+
+    
 
 </body>
 </html>
