@@ -12,14 +12,16 @@
     --accent-orange: #E86A5A;
     --light-blue: #8ABDF1;
     --mid-blue: #5B93E8;
-    --dark-blue: rgb(27, 54, 77);
+    --dark-blue: #1b364d;
     --edge-glow: #6EC8DA;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: var(--deep-gray);
-    color: rgb(245, 245, 245)
+    color: rgb(245, 245, 245);
+    min-height: 100vh;
+    position: relative;
 }
 
 /* navigation styling */
@@ -31,15 +33,14 @@ body {
     font-weight: 700;
 }
 
-#nav-row td{
+#nav-row td {
     padding-right: 2px;
 }
 
 .nav-button {
     padding: 0.33em;
     font-size: large;
-    border-radius: 4px;
-    border: 3px solid var(--dark-blue) inset;
+    border: 1px solid #193146;
     background-color: var(--dark-blue);
     color: var(--ot-white);
     box-shadow: 1.5px 1.5px var(--deep-gray);
@@ -53,13 +54,13 @@ body {
 
 .nav-button:active {
     background-color: var(--deep-gray);
-    border: 3px solid #1E2430 inset;
-    box-shadow: 1.5px 1.5px var(--dark-blue) inset;
+    border: 1px solid #1E2430 inset;
+    box-shadow: 1px 1px var(--dark-blue) inset;
 }
 
-#nav-spacer {
+#nav-spacer-01 {
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 2px solid var(--dark-blue);
 }
 
@@ -68,10 +69,6 @@ body {
 }
 
 /* main page content starts */
-
-#audio-clip {
-    margin-top: 5px;
-}
 
 /* box styling */
 
@@ -84,14 +81,14 @@ body {
 }
 
 #file-grid-container {
-    margin: 20px;
+    margin: 10px;
 }
 
 /* grid container */
 #file-grid {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 10px;
 }
@@ -99,14 +96,13 @@ body {
 /* grid item */
 .-box {
     background-color: var(--ot-gray);
-    border: 3px solid #232a38;
-    border-radius: 3px;
+    border: 1px solid #232a38;
     box-shadow: 3px 3px #1b202a;
 }
 
 .-header {
     background-color: #333e52;
-    padding: 10px;
+    padding: 5px;
 }
 
 .-content {
@@ -114,12 +110,39 @@ body {
     padding: 10px;
 }
 
+/* styling elements within the boxes */
+#audio-clip {
+    margin-top: 5px;
+}
+
 /* timeline */
 
 #timeline {
-    margin: 20px;
+    margin: 10px;
     background-color: var(--ot-gray);
-    border: 3px solid #232a38;
-    border-radius: 3px;
+    border: 1px solid #232a38;
     box-shadow: 3px 3px #1b202a;
+}
+
+/* footer */
+
+footer {
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#player-info {
+    margin-bottom: 0;
+    background-color: var(--nav-color);
+    padding: 20px;
+}
+
+#nav-spacer-02 {
+    padding: 0;
+    border: 2px solid var(--dark-blue);
 }

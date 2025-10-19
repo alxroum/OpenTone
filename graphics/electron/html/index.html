@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../css/main_darkmode.css">
     <link rel="icon" type="image/x-icon" href="../../img/openToneIcon.ico">
     <script src="../js/functions.js"></script>
-    <script src="../js/audioFileListener.js"></script>
+    <script src="../js/fileConvert.js"></script>
+    <script src="../js/fileManagement.js"></script>
+    <script src="../js/eventListeners.js"></script>
     <title>OpenTone</title>
 </head>
 <body>
@@ -18,12 +20,12 @@
                 <td><button title="Skip to Start" onclick="skipBeginning()" class="nav-button"><img src="../../img/buttons/skip_back_button.png" width="35px"></button></td>
                 <td><button title="Skip to End" onclick="skipEnd()" class="nav-button"><img src="../../img/buttons/skip_forward_button.png" width="35px"></button></td>
                 <td><span class="spacer"></span></td>
-                <td><button title="Remove File" class="nav-button"><img src="../../img/buttons/remove_file_button.png" width="35px"></button></td>
+                <td><button title="Remove File" onclick="unHandleFile()" class="nav-button"><img src="../../img/buttons/remove_file_button.png" width="35px"></button></td>
             </tr>
         </table>
     </div>
 
-    <hr id="nav-spacer">
+    <hr id="nav-spacer-01">
 
     <div id="content">
         <div id="file-grid-container">
@@ -32,24 +34,13 @@
                 <div class="-box">
                     <div class="-box-container">
                         <div class="-header">
-                            <h2>Upload File</h2>
+                            <h2 id="file-status">Active File</h2>
                         </div>
                         <div class="table-break"></div>
                         <div class="-content">
                             <input type="file" id="audio-clip"
                                 name="audio-clip" accept="audio/*" 
                                 title="Audio Clip">
-                        </div>
-                    </div>
-                </div>
-                <div class="-box">
-                    <div class="-box-container">
-                        <div class="-header">
-                            <h2>Active File</h2>
-                        </div>
-                        <div class="table-break"></div>
-                        <div class="-content">
-                            current file name
                         </div>
                     </div>
                 </div>
@@ -87,17 +78,20 @@
         </div> <!-- file-grid-container ends -->
 
         <div id="timeline" class="-box">
-            <div class="-header">
-                <h2>Timeline</h2>
-            </div>
-            <div class="table-break"></div>
             <div class="-content">
-
+                timeline player
             </div>
         </div>
     </div> <!-- content ends -->
 
-    
+    <footer>
+        <div id="player-info">
+            <div>
+                timeline info goes here
+            </div>
+        </div>
+        <hr id="nav-spacer-02">
+    </footer>
 
 </body>
 </html>
