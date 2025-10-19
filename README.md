@@ -4,18 +4,22 @@
 
 ## <b> Audio player, file converter, and equalizer. </b>
 
-dependencies for source code editing: 
-- nodejs
+Dependencies for source code editing: 
+- [nodejs.org](https://nodejs.org/en/download)
 - c++
-- cmake
-- electron
-- lamejs
+- [cmake](https://cmake.org/)
+- [electron](https://www.electronjs.org/docs/latest/)
+- [lamejs](https://github.com/zhuker/lamejs)
 - [miniaudio](https://github.com/mackron/miniaudio)
+<br>
 
-using electron for graphics
-electron and nodejs are gitignored, so make sure to install them in the project using 
+This program uses nodejs and electron for graphics.
+<br>
 
-npm i electron --save-dev
+download and install nodejs @ [nodejs.org](https://nodejs.org/en/download). <br><br>
 
-for lamejs
-npm install lamejs
+once nodejs is installed, [electron](https://www.electronjs.org/docs/latest/) can be installed using: <br>
+```npm i electron --save-dev``` <br><br>
+
+and [lamejs](https://github.com/zhuker/lamejs) can also be installed: <br>
+```npm install lamejs```
