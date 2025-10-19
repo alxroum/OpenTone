@@ -25,6 +25,9 @@ endif()
 
 add_executable(OpenTone main.cpp)
 
+add_executable(OpenTone main.cpp
+			cpp-files/player.cpp
+			cpp-files/miniaudio.c)
 #set(raylib_VERBOSE 1)
 target_link_libraries(OpenTone raylib)
 
