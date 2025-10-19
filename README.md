@@ -22,4 +22,7 @@ once nodejs is installed, [electron](https://www.electronjs.org/docs/latest/) ca
 ```npm i electron --save-dev``` <br><br>
 
 and [lamejs](https://github.com/zhuker/lamejs) can also be installed: <br>
-```npm install lamejs```
+```npm install lamejs``` <br><br>
+
+The electron program can be run using: <br>
+```npm run electron```<br>
