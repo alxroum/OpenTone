@@ -10,7 +10,7 @@ dependencies for source code editing:
 - cmake
 - electron
 - lamejs
-
+- [miniaudio](https://github.com/mackron/miniaudio)
 using electron for graphics
 electron and nodejs are gitignored, so make sure to install them in the project using 
 
