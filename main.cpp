@@ -14,6 +14,45 @@
 ********************************************************************************************/
 
 #include ".\build\_deps\raylib-build\raylib\include\raylib.h"
+#include "include/opentone.h"
+
+class OTButton : public Rectangle {
+    
+    private:
+
+        Vector2 screenPos;
+        float width = 100;
+        float height = 35;
+        Color color;
+        int btnState = 0;
+        Rectangle rect;
+
+    public:
+
+        OTButton(Vector2 screenPosition, float btnWidth, float btnHeight,  Color backgroundColor) {
+            screenPos = screenPosition;
+            width = btnWidth;
+            height = btnHeight;
+            color = backgroundColor;
+            rect = {screenPos.x, screenPos.y, width, height};
+        }
+
+        void DrawButton() {
+            DrawRectanglePro(rect, {width / 2, height / 2}, 0, color);
+        }
+
+        Rectangle Rect() {
+            return this->rect;
+        }
+
+        float Width() {
+            return this->width;
+        }
+
+        float Height() {
+            return this->height;
+        }
+};
 
 //------------------------------------------------------------------------------------
 // Program main entry point
@@ -22,12 +61,24 @@ int main(void)
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    const int screenWidth = 800;
-    const int screenHeight = 450;
+    const int screenWidth = 1920 / 2; // will likely be imported from a config file in the future
+    const int screenHeight = 1080 / 2;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - input keys");
+    const Vector2 screenCenter = {screenWidth / 2, screenHeight / 2};
 
-    Vector2 ballPosition = { (float)screenWidth/2, (float)screenHeight/2 };
+    // VARIABLES
+
+    Vector2 mousePos = {0.0f, 0.0f};
+
+    // BUTTONS
+
+    OTButton btn = OTButton(screenCenter, 150, 50, OT_BLUE);
+
+    // GAME SETUP
+
+    InitWindow(screenWidth, screenHeight, "OpenTone");
+    
+    Font fnt = LoadFontEx("/graphics/font/calibri.ttf", 32, 0, 250);
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
@@ -36,22 +87,18 @@ int main(void)
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
         // Update
-        //----------------------------------------------------------------------------------
-        if (IsKeyDown(KEY_RIGHT)) ballPosition.x += 2.0f;
-        if (IsKeyDown(KEY_LEFT)) ballPosition.x -= 2.0f;
-        if (IsKeyDown(KEY_UP)) ballPosition.y -= 2.0f;
-        if (IsKeyDown(KEY_DOWN)) ballPosition.y += 2.0f;
-        //----------------------------------------------------------------------------------
+
+        mousePos = GetMousePosition();
 
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
-            ClearBackground(RAYWHITE);
+            ClearBackground(OT_BACKGROUND);
 
-            DrawText("move the ball with arrow keys", 10, 10, 20, DARKGRAY);
-
-            DrawCircleV(ballPosition, 50, MAROON);
+            DrawTextEx(fnt, "Welcome to OpenTone!",{10, 10}, 20, 3, OT_WHITE);
+            
+            btn.DrawButton();
 
         EndDrawing();
         //----------------------------------------------------------------------------------

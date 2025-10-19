@@ -1,0 +1,10 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "screen_width": 800,
+            "screen_height": 600,
+            "theme": "dark"
+        }
+    ]
+}

@@ -23,6 +23,8 @@ endif()
 
 # Our Project
 
+add_executable(OpenTone main.cpp)
+
 add_executable(OpenTone main.cpp
 			cpp-files/player.cpp
 			cpp-files/miniaudio.c)

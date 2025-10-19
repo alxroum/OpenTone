@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" http-equiv="Content-Security-Policy">
+    <link rel="stylesheet" type="text/css" href="../css/main_darkmode.css">
+    <link rel="icon" type="image/x-icon" href="../../img/openToneIcon.ico">
+    <script src="../js/functions.js"></script>
+    <script src="../js/fileConvert.js"></script>
+    <script src="../js/fileManagement.js"></script>
+    <script src="../js/eventListeners.js"></script>
+    <title>OpenTone</title>
+</head>
+<body>
+    <div id="nav">
+        <table id="nav-icons">
+            <tr id="nav-row">
+                <td><button title="Pause" onclick="pauseAudio()" class="nav-button"><img src="../../img/buttons/pause_button.png" width="35px"></button></td>
+                <td><button title="Play" onclick="playAudio()" class="nav-button"><img src="../../img/buttons/play_button.png" width="35px"></button></td>
+                <td><button title="Stop" onclick="stopAudio()" class="nav-button"><img src="../../img/buttons/stop_button.png" width="35px"></button></td>
+                <td><button title="Skip to Start" onclick="skipBeginning()" class="nav-button"><img src="../../img/buttons/skip_back_button.png" width="35px"></button></td>
+                <td><button title="Skip to End" onclick="skipEnd()" class="nav-button"><img src="../../img/buttons/skip_forward_button.png" width="35px"></button></td>
+                <td><span class="spacer"></span></td>
+                <td><button title="Remove File" onclick="unHandleFile()" class="nav-button"><img src="../../img/buttons/remove_file_button.png" width="35px"></button></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr id="nav-spacer-01">
+
+    <div id="content">
+        <div id="file-grid-container">
+            <div id="file-grid">
+                
+                <div class="-box">
+                    <div class="-box-container">
+                        <div class="-header">
+                            <h2 id="file-status">Active File</h2>
+                        </div>
+                        <div class="table-break"></div>
+                        <div class="-content">
+                            <input type="file" id="audio-clip"
+                                name="audio-clip" accept="audio/*" 
+                                title="Audio Clip">
+                        </div>
+                    </div>
+                </div>
+                <div class="-box">
+                    <div class="-box-container">
+                        <div class="-header">
+                            <h2>Convert File</h2>
+                        </div>
+                        <div class="table-break"></div>
+                        <div class="-content">
+                            <form>
+                                From <i><span id="current-file">example.mp3</span></i>
+                                <br>
+                                <label for="">To: </label>
+                                <select title="File Type" id="file-type-radio" name="file type">
+                                    <option value=".wav">wav</option>
+                                    <option value=".mp3">mp3</option>
+                                    <option value=".flac">flac</option>
+                                </select>
+                                <br>
+                                <button>
+                                    Convert
+                                </button>
+                                <br>
+                                <button>
+                                    <a id="file-download" download="converted_file" href="../../../files/generated/testFile.mp3"
+                                    style="color: black; text-decoration: none;">Download</a>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div> 
+        </div> <!-- file-grid-container ends -->
+
+        <div id="timeline" class="-box">
+            <div class="-content">
+                timeline player
+            </div>
+        </div>
+    </div> <!-- content ends -->
+
+    <footer>
+        <div id="player-info">
+            <div>
+                timeline info goes here
+            </div>
+        </div>
+        <hr id="nav-spacer-02">
+    </footer>
+
+</body>
+</html>
