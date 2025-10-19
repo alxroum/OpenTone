@@ -1,7 +1,15 @@
-// manages active file in the 
+// manages active audio file in the app
+const fs = require('fs');
+const path = require('path');
 
 var file_status = document.getElementById("file-status");
 file_status.innerHTML = "test";
+
+// should happen on page reload to clear the tmp
+// tmp will contain the converted file exports and should be cleared
+function clearTemp() {
+    const directory = 'files/tmp';
+}
 
 // check if the input file is one of the valid formats
 function isValidFile(infile) {
@@ -31,5 +39,6 @@ function handleFile(file) {
 
 function removeActiveFile() {
     var activeFile = document.getElementById("audio-clip");
+    activeFile.value = ''; // clear file in the <input> tag
     console.log("removing file");
 }

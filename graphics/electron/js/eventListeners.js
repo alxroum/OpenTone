@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             handleFile(file);
         } else {
             alert('Invalid file type. Please choose a valid file (.wav, .flac, .mp3).')
+            unHandleFile();
         }
     });
 });
