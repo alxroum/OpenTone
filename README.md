@@ -11,6 +11,7 @@ Dependencies for source code editing:
 - [electron](https://www.electronjs.org/docs/latest/)
 - [lamejs](https://github.com/zhuker/lamejs)
 - [miniaudio](https://github.com/mackron/miniaudio)
+- v8 for nodejs
 <br>
 
 This program uses nodejs and electron for graphics.
