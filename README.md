@@ -27,3 +27,7 @@ and [lamejs](https://github.com/zhuker/lamejs) can also be installed: <br>
 
 The electron program can be run using: <br>
 ```npm run electron```<br>
+
+npm i -D electron electron-is-dev
+
+npm install electron electron-builder --save-dev
